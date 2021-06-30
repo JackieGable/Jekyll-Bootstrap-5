@@ -1,0 +1,23 @@
+HOW TO USE THIS PROJECT
+
+
+## RUNNING THE PROJECT
+Run this at command prompt:
+    bundle exec jekyll serve
+
+## IF YOU ENCOUNTER ERRORS
+Run this at command prompt:
+    jekyll doctor
+
+## UPDATE DEPENDENCIES
+    bundle update
+
+
+## COMPILE SASS TO CSS
+Make changes to main.scss:
+This file: assets/css/main.scss compiles and outputs to assets/css/main.css
+This file: main.scss imports bootstrap/bootstrap.scss and css/_custom.scss
+
+## ADD CUSTOM CSS
+Add custom styles to assets/css/_custom.scss
+It will then be imported into assets/css/main.scss and compiled to assets/css/main.css
