@@ -19,16 +19,17 @@ twitter:
   username:
   card: summary #keep this to generate a twitter share card
 
+include:
+  - _pages
+
+# collections:
+#   pages:
+#     output: true
+#     permalink: /_pages/
 
 
-collections:
-  pages:
-    output: true
-    # permalink: /:path
-
-
-defaults:
-  - scope:
-      type: pages
-    values:
-      layout: page
+# defaults:
+#   - scope:
+#       type: pages
+#     values:
+#       layout: page
