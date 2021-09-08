@@ -1,0 +1,71 @@
+HOW TO USE THIS PROJECT
+This file should be ready to use as is. Just open the terminal, type this and press enter:
+bundle exec jekyll serve --trace
+
+You should be able to view the file at:
+Server address: http://127.0.0.1:4000/
+
+## RUNNING THE PROJECT
+Run this at command prompt:
+    bundle exec jekyll serve --trace
+
+## IF YOU ENCOUNTER ERRORS
+Run this at command prompt:
+    jekyll doctor
+
+## UPDATE DEPENDENCIES
+    bundle update
+
+## CLEAR THE CACHE
+        bundle exec jekyll clean
+
+## TO COMPILE SCSS TO CSS
+1. Make changes to main.scss:
+    This file: main.scss imports bootstrap/bootstrap.scss and css/_custom.scss
+    This file: assets/css/main.scss compiles and outputs to assets/css/main.css
+    This file: _layouts/default.html links to main.css like this:
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+2. Once you run 'bundle exec jekyll serve --trace' then Jekyll will compile the scss and create this file: _site/assets/css/main.css file
+3. Open the server page http://127.0.0.1:4000/  and verify it has compiled correctly.
+
+## TO ADD CUSTOM CSS
+Add custom styles to assets/css/_custom.scss
+It will then be imported into assets/css/main.scss and compiled to assets/css/main.css
+
+
+## TO IMPORT ONLY SPECIFIC BOOTSTRAP FILES
+1. Open main.scss and disable or comment-out this line:  @import 'bootstrap/bootstrap  so it should look like this :
+// @import 'bootstrap/bootstrap';
+2. Next Open bootstrap/bootstrap.scss and select all the imports, then copy them to your clipboard.
+3. Next open main.scss and paste all the imports below this one:
+        // @import 'bootstrap/bootstrap';
+4. Make sure that the custom import is at the bottom:
+        @import 'custom';
+5. Comment out the imports that you will not be using and save the file.
+6. Test to be sure it is working.
+
+
+## LOCATION OF STUFF
+The pages directory holds all the site's pages.
+Each page has front-matter with details about the layout and title of the page.
+The _layouts/page.html extends the _layouts/default.html
+
+
+## TO UPDATE BOOTSTRAP VERSION
+1. Go to https://getbootstrap.com/docs/5.1/getting-started/download/  and download the latest source files for bootstrap.
+2. Extract the file and copy the scss folder to this project folder, in the assets/css directory.
+3. Rename the existing bootstrap folder to: bootstrap_old.
+4. Rename the scss folder to bootstrap.
+5. Import the specific files into your main.scss file or import the whole bootstrap file like this:
+         @import 'bootstrap/bootstrap';
+6. Add your custom imports below it like this and save the file:
+            @import 'custom';
+
+7. Be sure to test everything is working.
+8. When you are sure everything is working, then delete the bootstrap_old folder.
+9. Dont forget that you will need to prefix (with bootstrap)  the imported bootstrap files like this:
+            @import "bootstrap/functions";
+            @import "bootstrap/variables";
+
+Once you run 'bundle exec jekyll serve --trace' then Jekyll will compile the scss and create this file: _site/assets/css/main.css file

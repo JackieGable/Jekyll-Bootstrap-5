@@ -1,0 +1,3 @@
+9.8.2021
+This project was created as a template to help me learn and test how to use Bootstrap and sass in my Jekyll projects. It currently works by running this at the command line:
+    bundle exec jekyll serve --trace
