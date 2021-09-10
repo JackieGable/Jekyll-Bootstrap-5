@@ -1,0 +1,23 @@
+menus:
+  - title: About Us
+    url: /about.html
+    subfolderitems:
+      - page: Staff
+        url: /staff.html
+      - page: Customers
+        url: /customers.html
+  - title: Contact Us
+    url: /contact.html
+    subfolderitems:
+      - page: Contact
+        url: /contact.html
+      - page: Map
+        url: /map.html
+      - page: Hours
+        url: /hours.html
+  - title: Products
+    subfolderitems:
+      - page: Dirt
+        url: /dirt.html
+      - page: Stones
+        url: /stones.html
