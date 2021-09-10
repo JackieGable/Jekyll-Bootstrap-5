@@ -28,12 +28,53 @@
 <style>
   .current {
     background-color: red;
+    color: white;
+  }
+
+  li a.active {
+    background-color: red;
+    color: white;
+  }
+
+  .active {
+    background-color: red;
+    color: white;
+  }
+
+  /* Style the active class, and links on mouse-over */
+  .active,
+  .nav-item:hover {
+    background-color: red;
+    color: white;
   }
 </style>
 
-<!-- {{% if entry.url === item.active %}}class="current"{% endif %}
+<script>
+  // Add active class to the current button (highlight it)
+  // var header = document.getElementById("navbarDropdown");
+  // var links = header.getElementsByClassName("nav-link");
+  // for (var i = 0; i < links.length; i++) {
+  //   links[i].addEventListener("click", function () {
+  //     var current = document.getElementsByClassName("current");
+  //     if (current.length > 0) {
+  //       current[0].className = current[0].className.replace(" current", "");
+  //     }
+  //     this.className += " active";
+  //   });
+  // }
+</script>
 
-
-{% for item in site.data.navigation %}
-<a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
-{% endfor %} -->
+<script>
+  // Add active class to the current button (highlight it)
+  // var header = document.getElementById("navbarDropdown");
+  // var links = header.getElementsByClassName("nav-link");
+  // for (var i = 0; i < links.length; i++) {
+  //   links[i].addEventListener("click", function () {
+  //     var current = document.getElementsByClassName("active");
+  //     if (current.length > 0) {
+  //       current[0].className = current[0].className.replace(" active", "");
+  //     }
+  //     this.className += " active";
+  //   });
+  // }
+</script>
