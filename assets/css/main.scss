@@ -23,29 +23,29 @@
 @import "bootstrap/images";
 @import "bootstrap/containers";
 @import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
+// @import "bootstrap/tables";
+@import "bootstrap/forms/form-control";
 @import "bootstrap/buttons";
 @import "bootstrap/transitions";
 @import "bootstrap/dropdown";
-@import "bootstrap/button-group";
+//@import "bootstrap/button-group";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
 @import "bootstrap/card";
 @import "bootstrap/accordion";
-@import "bootstrap/breadcrumb";
-@import "bootstrap/pagination";
-@import "bootstrap/badge";
-@import "bootstrap/alert";
-@import "bootstrap/progress";
-@import "bootstrap/list-group";
+// @import "bootstrap/breadcrumb";
+// @import "bootstrap/pagination";
+// @import "bootstrap/badge";
+// @import "bootstrap/alert";
+// @import "bootstrap/progress";
+// @import "bootstrap/list-group";
 @import "bootstrap/close";
-@import "bootstrap/toasts";
+// @import "bootstrap/toasts";
 @import "bootstrap/modal";
-@import "bootstrap/tooltip";
-@import "bootstrap/popover";
+// @import "bootstrap/tooltip";
+// @import "bootstrap/popover";
 @import "bootstrap/carousel";
-@import "bootstrap/spinners";
+// @import "bootstrap/spinners";
 @import "bootstrap/offcanvas";
 
 // Helpers
@@ -54,6 +54,10 @@
 // Utilities
 @import "bootstrap/utilities/api";
 // scss-docs-end import-stack
+
+// Responsive Font
+// @import "bootstrap/vendor/rfs";
+
 
 
 

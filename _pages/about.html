@@ -1,8 +1,12 @@
 ---
-layout: page
+layout: default
 title: About
+menu-group: <a href="about.html">About Us</a>
 permalink: /about.html
 
 ---
+<p class="ps-4"> {{ page.menu-group | upcase }} <a class="breadcrumb-items active" href="{{ page.url }}">{{
+        page.title | upcase }}</a>
+</p>
 
-<h1 class="text-center">This is the About Page</h1>
+<h1 class="text-center">{{ page.title }}</h1>

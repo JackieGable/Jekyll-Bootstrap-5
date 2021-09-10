@@ -1,0 +1,31 @@
+VARIABLES
+
+<title>{{ page.title }} - {{ site.title }}</title>
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+
+Create a _data file and name it navbar.yml then add the links.
+- name: Home
+link: /
+- name: About
+link: /about
+- name: Contact
+link: /contact
+
+Use this in the html to call the file:
+
+{% for item in site.data.navbar %}
+<a class="nav-item nav-link" href="{{item.link}}">{{ item.name }}</a>
+{% endfor %}
+
+
+IF CAROUSEL = TRUE, THEN USE THIS SCRIPT. Be sure to list carousel:true in front matter like this:
+---
+title: Home
+carousel: true
+---
+<!-- Use carousel script if page has a carousel -->
+{% if carousel %}
+{% include carousel-script.html %}
+{% endif %}
