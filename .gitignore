@@ -1,10 +1,8 @@
 
 _site/*
+_notes/*
 .sass-cache
 .jekyll-cache/*
 .jekyll-metadata
 vendor
 .txt
-
-# Local Netlify folder
-.netlify
